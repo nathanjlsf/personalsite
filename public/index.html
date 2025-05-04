@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My First Web Page</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="tokens.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script type="module" src="test.mjs"></script>
+</head>
+<body>
+    <script type="module">
+        import { header } from "./header.mjs";
+        document.body.prepend(header("Nathan Lee"));
+    </script>
+    
+    <main>
+        <div class="about-container">
+            <img 
+                class="selfimage"
+                src="image.png"
+                alt="Picture of myself" />
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p>I am a 4th year Computer Science student at Cal Poly. I am focused on Software Enginnering with an interest in AI. </p>
+                <h2 class="section-title">Fun Facts</h2>
+
+                <ul>
+                    <li>My family has a Maltese Poodle</li>
+                    <li>I am a Golden State Warriors fan</li>
+                    <li>I enjoy playing video games</li>
+                    <li>I am from San Francisco</li>
+                </ul>
+            </div>
+        </div>
+
+        <dl class="contact-info">
+            <dt>Email</dt>
+            <dd>nlee109@calpoly.edu</dd>
+            <dt>GitHub</dt>
+            <dd>
+                <a href="https://github.com/nathanjlsf">nathanjlsf</a>
+            </dd>
+            <dt>LinkedIn</dt>
+            <dd>
+                <a href="https://www.linkedin.com/in/nathanj-lee/">nathanj-lee</a>
+            </dd>
+        </dl>
+        
+    </main>
+
+</body>
+</html>

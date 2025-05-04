@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    color: var(--color-header-text);
+    background-color: var(--color-header-bg);
+    gap: var(--spacing-gap);
+    padding: var(--spacing-padding);
+  }
+  
+  nav {
+    display: flex;
+    gap: var(--spacing-gap);
+  }
+  
+  a {
+    color: var(--color-accent);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-section-title);
+    color: var(--color-header-text);
+    font-weight: bold;
+  }
+  
+  b,
+  h1 {
+    color: var(--color-header-text);
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-body-text);
+  }
+  
+  dd,
+  ul,
+  p {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-style: normal;
+    padding-left: var(--spacing-indent);
+  }
+  
+  .selfimage {
+    height: 300px;
+    width: 300px;
+    flex-shrink: 0;
+  }
+  
+  main {
+    padding: 20px;
+    line-height: var(--line-height-body);
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: max-content auto;
+    column-gap: 1.5em;
+    row-gap: 0.5em;
+    padding-left: var(--spacing-indent);
+    font-family: var(--font-body);
+    line-height: var(--line-height-body);
+  }
+
+  .contact-info dt {
+  font-weight: bold;
+  color: var(--color-header-text);
+  }
+
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 4em;
+    padding-left: var(--spacing-indent);
+    margin-top: 2em;
+    flex-wrap: wrap;
+  }
+
+  .about-text {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #dark-mode-toggle {
+    margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 700px) {
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      margin-top: 0.5rem;
+    }
+  
+    #nav-links.show {
+      display: flex;
+    }
+  
+    #menu-button {
+      display: block;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+    }
+  }
+  
+  @media (min-width: 701px) {
+    #nav-links {
+      display: flex;
+    }
+  
+    #menu-button {
+      display: none;
+    }
+  }
+  

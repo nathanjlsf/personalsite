@@ -1,0 +1,26 @@
+:root {
+    --color-bg: #3f6c51;
+    --color-header-bg: #bad8b6;
+    --color-header-text: #f9f6e6;
+    --color-accent: #f19143;
+    --color-body-text: #f3e6f9;
+
+    --font-display: "Borel", cursive;
+    --font-body: "Noticia Text", serif;
+
+    --spacing-gap: 20px;
+    --spacing-indent: 2rem;
+    --spacing-padding: 10px;
+
+    --font-size-section-title: 25px;
+    --line-height-body: 1.6;
+}
+
+body.dark-mode {
+    --color-bg: #102820;             /* Deep blue-purple (background) */
+    --color-header-bg: #1f3d30;      /* Muted navy (header background) */
+    --color-header-text: #f0f0f5;    /* Soft white with bluish tint */
+    --color-body-text: #e0e0e0;      /* Light grey for readability */
+    --color-accent: #ffb36b;         /* Warm pastel orange (from light mode, softened) */
+    --color-border: #ffb36b;         /* Match accent for borders */
+}

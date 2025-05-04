@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects Page</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="tokens.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <script type="module">
+        import { header } from "./header.mjs";
+        document.body.prepend(header("Projects"));
+    </script>
+
+    <main>
+        <h2 class="section-title">TipOff</h2>
+        <p>Designed and developed a real-time NBA analysis app that fetches, stores, and retrieves game schedules, scores, and player statistics using MongoDB, Node.js, and Axios.</p>
+        <p>Implemented MongoDB integration to efficiently store and query game data, reducing API calls and improving performance.</p>
+        <p>Developed RESTful API endpoints to provide game data, ensuring optimized retrieval for frontend applications.</p>
+        <p>Handled real-time data fetching from RapidAPI's NBA API, formatted game data for readability, and managed time zone adjustments for accurate game schedules.</p>
+
+        <h2 class="section-title">SLOutions</h2>
+        <p>Collaborated in a team of four to develop a web-based survey platform aimed at improving campus facilities and infrastructure, leveraging Agile methodologies</p>
+        <p>Designed and implemented the frontend using React and Bootstrap, integrating MongoDB for robust data management</p>
+        <p>Developed and deployed RESTful APIs to efficiently handle survey data storage and retrieval</p>
+        <p>Deployed the application on Microsoft Azure, ensuring seamless accessibility, scalability, and secure data handling in a cloud environment</p>
+
+        <h2 class="section-title">Semantic-Aware Image Style Transfer</h2>
+        <p>Created an AI system that could apply artistic styles to specific parts of images while maintaining quality and accuracy</p>
+        <p>Built a complete web application using React and Flask that let users upload, process, and save their styled images</p>
+        <p>Tested the system's performance and showed it worked better than older style transfer methods</p>
+    </main>
+
+</body>
+</html>
