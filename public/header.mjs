@@ -6,8 +6,8 @@ export function header(title) {
         <h1>Nathan Lee</h1>
         <nav id="nav-links">
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="projects.html">Projects</a>
         </nav>
         </div>
         <label id="dark-mode-toggle">
